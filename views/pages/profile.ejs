@@ -1,0 +1,22 @@
+<a href="/api/logout">Log out</a>
+
+<h1>
+  <%= user.displayName%>
+</h1>
+<!-- fb name ko displayName me vejta hai. -->
+
+<!-- <%= %> is called interpolation -->
+
+<p>Facebook ID <b>
+    <%= user.id.substring(1,5) %>
+  </b></p>
+<p>Facebook ID full <b>
+    <%= user.id %>
+  </b></p>
+
+
+<!--
+          Yaha per data kaha se aur kaise aa rha  hai.
+
+  index.js me passport.use() ke under ke function me profile hai. To ye passport.use() hamara poora data ko save kar lega.
+userRoutes.s me hm isko '/pages' ke saath bind karke bhej denge. -->
